@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+	--color-text:#333;
+	--color-primary:#;
+	--color-secondary:#;
+	--color-accent:#;
+	--color-white:#fff;
+
+	--font-body:'Inter', sans-serif;
+	--font-heading:'', sans-serif;
+
+	--font-h1-size:48px;
+	--font-h2-size:36px;
+	--font-h3-size:24px;
+	--font-h4-size:20px;
+	--font-body-size:16px;
+	--font-big-size:20px;
+	--font-small-size:14px;
+	--font-tiny-size:12px;
+
+	--line-height:1.25;
+}
+
+* { margin:0; padding:0; border:0; outline:0; box-sizing:border-box; font-family:var(--font-body); font-size:var(--font-body-size); line-height:var(--line-height); color:：var(--color-text); }
+
+body { }
+section { width:100%; max-width:1000px; margin:0 auto; }
+h1, h2, h3, h4 { }
+h1 { font-size:var(--font-h1-size); }
+h2 { font-size:var(--font-h2-size); }
+h3 { font-size:var(--font-h3-size); }
+h4 { font-size:var(--font-h4-size); }
+p { }
+a { text-decoration:none; color:var(--color-primary); }
+
+
+/** navigation **/
+nav { width:100%; display:flex; align-items:center; justify-content:space-between; }
+.nav-title { font-size:var(--font-h3-size); }
+.nav-links { display:flex; gap:8px; }
+.nav-links-anchor { background:var(--color-white); color:var(--color-text); transition:all 0.3s ease-in; }
+.nav-links-anchor-active { background:var(--color-primary); color:var(--color-white); transition:all 0.3s ease-in; }

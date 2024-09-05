@@ -32,11 +32,13 @@ h1 { font-size:var(--font-h1-size); }
 h2 { font-size:var(--font-h2-size); }
 h3 { font-size:var(--font-h3-size); }
 h4 { font-size:var(--font-h4-size); }
+p { }
 a { text-decoration:none; color:var(--color-primary); }
 
 
 .wrapper { margin:0 auto; display:flex; flex-direction:column; }
-.container { width:100%; max-width:1000px; margin:0 auto; padding:40px 0; display:flex; flex-direction:column; }
+.content {  }
+.container { width:100%; max-width:1000px; min-height:100vh; margin:0 auto; padding:40px 0; display:flex; flex-direction:column; }
 .row { width:100%; max-width:800px; margin:0 auto; display:flex; }
 section { width:100%; }
 section:nth-child(2) { background:var(--color-accent); }
@@ -51,8 +53,11 @@ section:nth-child(2) { background:var(--color-accent); }
 
 /** section containers **/
 .about { min-height:calc(100vh - 100px); padding:40px 0; display:flex; flex-direction:column; align-items:center; gap:20px; text-align:center; }
+.about-img { }
 .about-img-mask { width:80px; height:80px; display:flex; align-items:center; justify-content:center; border-radius:50%; box-shadow:0 4px 8px var(--color-shadow); overflow:hidden; }
 .about-img-pfp { max-height:100%; }
+.about-info-heading {  }
+.about-info-text {  }
 .about-socials { display:flex; align-items:center; justify-content:center; gap:28px; }
 .about-socials-anchor { display:flex; align-items:center; transition:all 0.3s ease; }
 .about-socials-icon { padding:4px; height:16px; box-sizing:content-box; }
@@ -60,9 +65,9 @@ section:nth-child(2) { background:var(--color-accent); }
 .about-socials-anchor:hover { opacity:0.5; transition:all 0.3s ease; }
 
 
-.techstack-row { display:flex; }
-.techstack-col { flex:1; display:flex; flex-direction:column; gap:8px; }
-.techstack-title { text-align:center; }
+.techstack-row { display:flex; justify-content:center; gap:48px; }
+.techstack-col { display:flex; flex-direction:column; gap:8px; }
+.techstack-title { margin:60px 0 40px; text-align:center; }
 .techstack-heading { text-align:center; }
 .techstack-subheading { display:inline-block; margin:0 auto; padding:4px 16px; background:var(--color-primary); color:var(--color-white); font-weight:normal; font-size:var(--font-small-size); text-transform:uppercase; cursor:default; user-select:none; }
 .techstack-grid { width:100%; margin-bottom:8px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:24px; }

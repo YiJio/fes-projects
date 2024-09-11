@@ -7,13 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://kit.fontawesome.com/30b5de38f9.js" crossorigin="anonymous"></script>
-	<title>Document</title>
+	<title>Treact | FES Week 2 - Final Project</title>
 </head>
 
 <body>
 	<div class="container">
 		<div class="head">
-			<section id="landing" class="slide-left">
+			<section id="landing" class="reveal" style="--order:1;">
 				<header class="header">
 					<nav class="header-nav">
 						<div class="header-logo">
@@ -49,13 +49,13 @@
 						</div>
 					</div>
 					<div class="captive-splash">
-						<img src="./assets/landing.png" alt="Design Illustration" />
+						<img src="./assets/landing.svg" alt="Design Illustration" />
 					</div>
 				</div>
 			</section>
 		</div>
 		<div class="main">
-			<section id="features" class="slide-right">
+			<section id="features" class="reveal" style="--order:2;">
 				<div class="section-box features">
 					<div class="intro">
 						<h5 class="subheading">Features</h5>
@@ -121,7 +121,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="quality" class="slide-left">
+			<section id="quality" class="reveal" style="--order:3;">
 				<div class="section-box quality">
 					<div class="intro left w45">
 						<h5 class="subheading">Quality Work</h5>
@@ -132,11 +132,11 @@
 						<button class="btn-primary">Learn More</button>
 					</div>
 					<div class="splash">
-						<img src="./assets/hero.svg" />
+						<img src="./assets/hero.png" />
 					</div>
 				</div>
 			</section>
-			<section id="steps" class="slide-right">
+			<section id="steps" class="reveal" style="--order:4;">
 				<div class="section-box steps">
 					<div class="splash">
 						<img src="/assets/hero-2.png" />
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="values" class="slide-left">
+			<section id="values" class="reveal" style="--order:5;">
 				<div class="section-box values">
 					<div class="intro left">
 						<h5 class="subheading">Values</h5>
@@ -217,7 +217,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="pricing" class="slide-right">
+			<section id="pricing" class="reveal" style="--order:6;">
 				<div class="section-box pricing">
 					<div class="intro">
 						<h5 class="subheading">Pricing</h5>
@@ -282,7 +282,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="testimonials">
+			<section id="testimonials" class="reveal" style="--order:7;">
 				<div class="section-box testimonials">
 					<div class="splash">
 						<img src="./assets/hero-4.svg" alt="" />
@@ -361,24 +361,18 @@
 							</div>
 							<div class="carousel-pagination">
 								<button id="btn-prev">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-										stroke-width="2" viewBox="0 0 24 24">
-										<path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-									</svg>
+									<i class="fa-solid fa-arrow-left-long"></i>
 								</button>
 								<div class="pagination-div"></div>
 								<button id="btn-next">
-									<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-										stroke-width="2" viewBox="0 0 24 24">
-										<path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-									</svg>
+									<i class="fa-solid fa-arrow-right-long"></i>
 								</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="faq">
+			<section id="faq" class="reveal" style="--order:8;">
 				<div class="section-box faq">
 					<div class="intro">
 						<h5 class="subheading">FAQs</h5>
@@ -391,7 +385,7 @@
 							<div class="accordion-header">
 								<div class="accordion-title">Are all the templates easily customizable ?</div>
 								<div class="accordion-chevron">
-									<i class="fa fa-chevron-up"></i>
+									<i class="fa fa-chevron-down"></i>
 								</div>
 							</div>
 							<div class="accordion-text">Yes, they all are. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -402,7 +396,7 @@
 							<div class="accordion-header">
 								<div class="accordion-title">How long do you usually support a standalone template for ?</div>
 								<div class="accordion-chevron">
-									<i class="fa fa-chevron-up"></i>
+									<i class="fa fa-chevron-down"></i>
 								</div>
 							</div>
 							<div class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -413,7 +407,7 @@
 							<div class="accordion-header">
 								<div class="accordion-title">What kind of payment methods do you accept ?</div>
 								<div class="accordion-chevron">
-									<i class="fa fa-chevron-up"></i>
+									<i class="fa fa-chevron-down"></i>
 								</div>
 							</div>
 							<div class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -424,7 +418,7 @@
 							<div class="accordion-header">
 								<div class="accordion-title">Is there a subscription service to get the latest templates ?</div>
 								<div class="accordion-chevron">
-									<i class="fa fa-chevron-up"></i>
+									<i class="fa fa-chevron-down"></i>
 								</div>
 							</div>
 							<div class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -435,7 +429,7 @@
 							<div class="accordion-header">
 								<div class="accordion-title">Are the templates compatible with the React ?</div>
 								<div class="accordion-chevron">
-									<i class="fa fa-chevron-up"></i>
+									<i class="fa fa-chevron-down"></i>
 								</div>
 							</div>
 							<div class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -446,7 +440,7 @@
 							<div class="accordion-header">
 								<div class="accordion-title">Do you really support Internet Explorer 11 ?</div>
 								<div class="accordion-chevron">
-									<i class="fa fa-chevron-up"></i>
+									<i class="fa fa-chevron-down"></i>
 								</div>
 							</div>
 							<div class="accordion-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -456,7 +450,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="decorator">
+			<section id="decorator" class="reveal" style="--order:9;">
 				<div class="section-box cta">
 					<div class="cta-wrapper">
 						<div class="cta-tagline">Developers all over the world are happily using Treact.</div>
@@ -469,7 +463,7 @@
 			</section>
 		</div>
 		<div class="foot">
-			<section id="footer">
+			<section id="footer" class="reveal" style="--order:10;">
 				<footer class="footer">
 					<div class="footer-wrapper">
 						<div class="sitemap">

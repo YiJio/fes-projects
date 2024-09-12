@@ -1,1 +1,1 @@
-Quick link: <a target="blank" href="https://yijio.github.io/fes-2.3/">FES Week 2 - Final Project</a>
+Quick link: <a target="blank" href="https://yijio.github.io/fes-treact/">FES Week 2 - Treact/a>

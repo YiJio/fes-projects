@@ -5,178 +5,264 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="styles.css">
-	<title>Yi Jiang (E-Portfolio)</title>
+	<title>Portfolio | FES</title>
 </head>
 
 <body>
 	<div class="wrapper">
-		<nav class="nav">
-			<div class="nav-title">Yi Jiang</div>
-			<div class="nav-links">
-				<a class="nav-links-anchor" href="#techstack">Tech Stack</a>
-				<a class="nav-links-anchor" href="#projects">Projects</a>
-				<a class="nav-links-anchor active" href="#contact">Contact</a>
+		<header>
+			<nav class="nav">
+				<div class="nav-title">
+					<div class="nav-logo">
+						<img src="./assets/logo.svg" />
+					</div>
+				</div>
+				<div class="nav-links">
+					<a class="nav-links-anchor" href="#techstack">Tech Stack</a>
+					<a class="nav-links-anchor" href="#projects">Projects</a>
+					<a class="nav-links-anchor active" href="#contact">Contact</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="content">
+				<section id="about">
+					<div class="about">
+						<div class="about-img">
+							<figure class="about-img-mask">
+								<img class="about-img-pfp"
+									src="https://i.insider.com/5e83892d14f18f713f015007?width=800&format=jpeg&auto=webp"
+									alt="Picture of a yellow field of flowers." />
+							</figure>
+						</div>
+						<div class="about-info">
+							<h2 class="about-info-heading">Hello. I am Yi Jiang.</h3>
+								<p class="about-info-text">This is my version of the FES E-Portfolio.</p>
+						</div>
+						<div class="about-socials">
+							<a class="about-socials-anchor" href="https://linkedin.com/in/yijio">
+								<img class="about-socials-icon" src="./assets/linkedin.svg" />
+							</a>
+							<a class="about-socials-anchor" href="https://github.com/yijio">
+								<img class="about-socials-icon" src="./assets/github.svg" />
+							</a>
+							<a class="about-socials-anchor" href="mailto:jiangy.grad88@gmail.com">
+								<img class="about-socials-icon mail" src="./assets/mail.svg" />
+							</a>
+							<a class="about-socials-anchor" href="/assets/01 CV 2024 SDE.pdf" target="_blank">
+								<img class="about-socials-icon" src="./assets/pdf.svg" />
+							</a>
+						</div>
+					</div>
+				</section>
+				<section id="techstack">
+					<div class="container techstack">
+						<h2 class="techstack-title section-title">Tech Stack</h2>
+						<div class="techstack-row">
+							<div class="techstack-col">
+								<h3 class="techstack-heading">Frontend</h3>
+								<h4 class="techstack-subheading">Languages</h4>
+								<div class="techstack-grid">
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/html.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">HTML</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/css.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">CSS</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/javascript.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">JavaScript</span>
+									</div>
+								</div>
+								<h4 class="techstack-subheading">Frameworks</h4>
+								<div class="techstack-grid">
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/react.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">React</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/vue.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">Vue</span>
+									</div>
+								</div>
+								<h4 class="techstack-subheading">Environments</h4>
+								<div class="techstack-grid">
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/cra.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">Create React App (CRA)</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/nextjs.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">Next.js</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/vite.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">Vite</span>
+									</div>
+								</div>
+							</div>
+							<div class="techstack-col">
+								<h3 class="techstack-heading">Backend</h3>
+								<h4 class="techstack-subheading">Languages</h4>
+								<div class="techstack-grid">
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/php.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">PHP</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/python.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">Python</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/sql.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">SQL</span>
+									</div>
+								</div>
+								<h4 class="techstack-subheading">Frameworks</h4>
+								<div class="techstack-grid">
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/nodejs.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">Node.js</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/expressjs.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">Express.js</span>
+									</div>
+								</div>
+								<h4 class="techstack-subheading">Databases</h4>
+								<div class="techstack-grid">
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/firebase.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">Firebase</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/mongodb.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">MongoDB</span>
+									</div>
+									<div class="techstack-item">
+										<div class="techstack-item-img">
+											<img class="techstack-item-img-image" src="./assets/tech/mysql.svg" alt="" />
+										</div>
+										<span class="techstack-item-text">MySQL</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="projects">
+					<div class="container">
+						<h2 class="projects-title section-title">Projects</h2>
+						<div class="project-list row">
+							<div class="project">
+								<div class="project-wrapper">
+									<div class="project-hero">
+										<img src="https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png" alt="Project 2" />
+									</div>
+									<div class="project-content">
+										<div class="project-info">
+											<h3 class="project-title">Project 3</h3>
+											<h4 class="project-subtitle">Technologies</h4>
+											<p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget, luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.</p>
+											<div class="project-links">
+												<a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+												<a href="#"><i class="fas fa-link" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="project">
+								<div class="project-wrapper">
+									<div class="project-hero">
+										<img src="https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png" alt="Project 2" />
+									</div>
+									<div class="project-content">
+										<div class="project-info">
+											<h3 class="project-title">Project 2</h3>
+											<h4 class="project-subtitle">Technologies</h4>
+											<p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget, luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.</p>
+											<div class="project-links">
+												<a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+												<a href="#"><i class="fas fa-link" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="project">
+								<div class="project-wrapper">
+									<div class="project-hero">
+										<img src="https://miro.medium.com/v2/resize:fit:1400/1*KuGlXZjyTw7q38uzY_aZRA.png" alt="Project 2" />
+									</div>
+									<div class="project-content">
+										<div class="project-info">
+											<h3 class="project-title">Project 1</h3>
+											<h4 class="project-subtitle">Technologies</h4>
+											<p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam leo, scelerisque sed odio eget, luctus faucibus augue. Fusce volutpat iaculis dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id eleifend libero. In hac habitasse platea dictumst.</p>
+											<div class="project-links">
+												<a href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
+												<a href="#"><i class="fas fa-link" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
-		</nav>
-		<div class="content">
-			<section id="about">
-				<div class="about">
-					<div class="about-img">
-						<figure class="about-img-mask">
-							<img class="about-img-pfp"
-								src="https://i.insider.com/5e83892d14f18f713f015007?width=800&format=jpeg&auto=webp"
-								alt="Picture of a yellow field of flowers." />
-						</figure>
+		</main>
+		<footer class="footer">
+			<div class="footer-row row">
+				<div class="footer-col col">
+					<div class="footer-logo">
+						<img src="./assets/logo.svg" />
 					</div>
-					<div class="about-info">
-						<h2 class="about-info-heading">Hello. I am Yi Jiang.</h3>
-							<p class="about-info-text">This is my version of the FES E-Portfolio.</p>
+					<div class="footer-links">
+						<span>[<a href="https://www.github.com/YiJio" target="_blank">GitHub</a>]</span>
+						<span>[<a href="https://www.linkedin.com/in/yijio" target="_blank">LinkedIn</a>]</span>
+						<span>[<a href="mailto:jiangy.grad88@gmail.com">Email</a>]</span>
+						<span>[<a href="./assets/01 CV 2024 SDE.pdf" target="_blank">Resume</a>]</span>
 					</div>
-					<div class="about-socials">
-						<a class="about-socials-anchor" href="https://linkedin.com/in/yijio">
-							<img class="about-socials-icon" src="./assets/linkedin.svg" />
-						</a>
-						<a class="about-socials-anchor" href="https://github.com/yijio">
-							<img class="about-socials-icon" src="./assets/github.svg" />
-						</a>
-						<a class="about-socials-anchor" href="mailto:jiangy.grad88@gmail.com">
-							<img class="about-socials-icon mail" src="./assets/mail.svg" />
-						</a>
-						<a class="about-socials-anchor" href="/resume.pdf" target="_blank">
-							<img class="about-socials-icon" src="./assets//pdf.svg" />
-						</a>
-					</div>
+					<div class="footer-copyright">Copyright © 2021 Yi Jiang. All rights reserved.</div>
 				</div>
-			</section>
-			<section id="techstack">
-				<div class="container techstack">
-					<h2 class="techstack-title">Tech Stack</h2>
-					<div class="techstack-row">
-						<div class="techstack-col">
-							<h3 class="techstack-heading">Frontend</h3>
-							<h4 class="techstack-subheading">Languages</h4>
-							<div class="techstack-grid">
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/html.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">HTML</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/css.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">CSS</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/javascript.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">JavaScript</span>
-								</div>
-							</div>
-							<h4 class="techstack-subheading">Frameworks</h4>
-							<div class="techstack-grid">
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/react.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">React</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/vue.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">Vue</span>
-								</div>
-							</div>
-							<h4 class="techstack-subheading">Environments</h4>
-							<div class="techstack-grid">
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/cra.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">Create React App (CRA)</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/nextjs.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">Next.js</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/vite.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">Vite</span>
-								</div>
-							</div>
-						</div>
-						<div class="techstack-col">
-							<h3 class="techstack-heading">Backend</h3>
-							<h4 class="techstack-subheading">Languages</h4>
-							<div class="techstack-grid">
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/php.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">PHP</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/python.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">Python</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/sql.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">SQL</span>
-								</div>
-							</div>
-							<h4 class="techstack-subheading">Frameworks</h4>
-							<div class="techstack-grid">
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/nodejs.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">Node.js</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/expressjs.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">Express.js</span>
-								</div>
-							</div>
-							<h4 class="techstack-subheading">Databases</h4>
-							<div class="techstack-grid">
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/firebase.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">Firebase</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/mongodb.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">MongoDB</span>
-								</div>
-								<div class="techstack-item">
-									<div class="techstack-item-img">
-										<img class="techstack-item-img-image" src="./assets/mysql.svg" alt="" />
-									</div>
-									<span class="techstack-item-text">MySQL</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
+			</div>
+		</footer>
 	</div>
 </body>
 

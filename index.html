@@ -19,7 +19,7 @@
 				<ul class="nav-links">
 					<li><a class="nav-link" href="#">Home</a></li>
 					<li><a class="nav-link" href="#">Contact</a></li>
-					<li><a class="nav-link" href="#explore">Books</a></li>
+					<li><a class="nav-link" href="/books.html">Books</a></li>
 				</ul>
 				<button class="menu-btn" onclick="openMenu()">
 					<i class="fas fa-bars"></i>
@@ -86,9 +86,9 @@
 			<div class="container">
 				<div class="row">
 					<h2 class="section-title">Featured <span class="primary">Books</span></h2>
-					<div class="books">
-						<div class="book-wrapper">
-							<div class="book">
+					<div class="books-grid">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
 									<img class="book-img" src="./assets/crack the coding interview.png" alt="" />
 								</figure>
@@ -106,12 +106,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
-									<img class="book-img" src="./assets/crack the coding interview.png" alt="" />
+									<img class="book-img" src="./assets/atomic habits.jpg" alt="" />
 								</figure>
-								<div class="book-title">Crack the Coding Interview</div>
+								<div class="book-title">Atomic Habits</div>
 								<div class="book-rating">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -125,12 +125,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
-									<img class="book-img" src="./assets/crack the coding interview.png" alt="" />
+									<img class="book-img" src="./assets/david goggins.jpeg" alt="" />
 								</figure>
-								<div class="book-title">Crack the Coding Interview</div>
+								<div class="book-title">Can't Hurt Me</div>
 								<div class="book-rating">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -144,12 +144,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
-									<img class="book-img" src="./assets/crack the coding interview.png" alt="" />
+									<img class="book-img" src="./assets/deep work.jpeg" alt="" />
 								</figure>
-								<div class="book-title">Crack the Coding Interview</div>
+								<div class="book-title">Deep Work</div>
 								<div class="book-rating">
 									<i class="fas fa-star"></i>
 									<i class="fas fa-star"></i>
@@ -171,9 +171,9 @@
 			<div class="container">
 				<div class="row">
 					<h2 class="section-title">Latest <span class="primary">Books</span></h2>
-					<div class="books">
-						<div class="book-wrapper">
-							<div class="book">
+					<div class="books-grid">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
 									<img class="book-img" src="./assets/book-1.jpeg" alt="" />
 								</figure>
@@ -191,8 +191,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
 									<img class="book-img" src="./assets/book-2.jpeg" alt="" />
 								</figure>
@@ -210,8 +210,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
 									<img class="book-img" src="./assets/book-3.jpeg" alt="" />
 								</figure>
@@ -229,8 +229,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
 									<img class="book-img" src="./assets/book-4.jpeg" alt="" />
 								</figure>
@@ -248,8 +248,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
 									<img class="book-img" src="./assets/book-5.jpeg" alt="" />
 								</figure>
@@ -267,8 +267,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
 									<img class="book-img" src="./assets/book-6.jpeg" alt="" />
 								</figure>
@@ -286,8 +286,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
 									<img class="book-img" src="./assets/book-7.jpg" alt="" />
 								</figure>
@@ -305,8 +305,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="book-wrapper">
-							<div class="book">
+						<div class="book">
+							<div class="book-wrapper">
 								<figure class="book-img-wrapper">
 									<img class="book-img" src="./assets/book-8.jpeg" alt="" />
 								</figure>
@@ -333,7 +333,7 @@
 				<div class="row">
 					<h2 class="section-title">Explore more <span class="primary">Books</span></h2>
 					<div class="flex">
-						<a href="#latest"><button class="primary-btn">Browse books</button></a>
+						<a href="/books.html"><button class="primary-btn">Browse books</button></a>
 					</div>
 				</div>
 			</div>
@@ -351,7 +351,7 @@
 					<div class="footer-links">
 						<a class="footer-link" href="#">Home</a>
 						<a class="footer-link" href="#">About</a>
-						<a class="footer-link" href="#latest">Books</a>
+						<a class="footer-link" href="/books.html">Books</a>
 						<a class="footer-link" href="#">Contact</a>
 					</div>
 					<div class="footer-copyright">Copyright &copy; 2024 Library</div>

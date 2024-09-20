@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+	<title>Browse Books - E-Commerce App (Library) | FES</title>
+</head>
+
+<body>
+	<section>
+		<nav class="nav">
+			<div class="nav-container">
+				<img class="nav-logo" src="./assets/Library.svg" alt="" />
+				<ul class="nav-links">
+					<li><a class="nav-link" href="/">Home</a></li>
+					<li><a class="nav-link" href="/">Contact</a></li>
+					<li><a class="nav-link" href="#">Books</a></li>
+				</ul>
+				<button class="menu-btn" onclick="openMenu()">
+					<i class="fas fa-bars"></i>
+				</button>
+			</div>
+			<div class="menu-backdrop">
+				<div class="menu-backdrop-wrapper">
+					<button class="menu-btn menu-close" onclick="closeMenu()">
+						<i class="fas fa-times"></i>
+					</button>
+					<ul class="menu-links">
+						<li><a class="menu-link" href="/" onclick="closeMenu()">Home</a></li>
+						<li><a class="menu-link" href="/" onclick="closeMenu()">Contact</a></li>
+						<li><a class="menu-link" href="#" onclick="closeMenu()">Books</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<main class="books-wrapper">
+		<section id="books" class="books">
+			<div class="container">
+				<div class="row">
+					<div class="books-header">
+						<div class="section-title">All <span class="primary">Books</span></div>
+						<div class="books-filter">
+							Sort by
+							<select id="filter" class="sort-dropdown" onchange="filterBooks(event)">
+								<option disabled selected>Sort</option>
+								<option value="LOW_TO_HIGH">Price, Low to High</option>
+								<option value="HIGH_TO_LOW">Price, High to Low</option>
+								<option value="RATING">Rating</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="books-grid">
+						<i class="fas fa-spinner books-load-spinner"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<figure class="footer-logo">
+						<a href="#">
+							<img class="footer-logo-img" src="./assets/Library.svg" alt="" />
+						</a>
+					</figure>
+					<div class="footer-links">
+						<a class="footer-link" href="/">Home</a>
+						<a class="footer-link" href="/">About</a>
+						<a class="footer-link" href="#">Books</a>
+						<a class="footer-link" href="/">Contact</a>
+					</div>
+					<div class="footer-copyright">Copyright &copy; 2024 Library</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="books.js"></script>
+</body>
+
+</html>

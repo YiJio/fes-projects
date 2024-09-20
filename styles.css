@@ -51,8 +51,9 @@ select, option { font-size:14px; }
 .nav-container { margin:0 auto; padding:0 24px; width:100%; max-width:1200px; height:100%; display:flex; justify-content:space-between; align-items:center; }
 .nav-logo { width:160px; cursor:pointer; }
 .nav-links { display:flex; gap:16px; }
-.nav-link { padding:8px; font-size:20px; font-weight:bold; color:var(--color-primary-2); }
-.nav-link.active {  }
+.nav-link { padding:8px 12px; border-radius:4px; font-size:20px; font-weight:bold; color:var(--color-primary-2); transition:all 0.3s ease; }
+.nav-link:hover, .nav-link.active { text-decoration:none; background:var(--color-primary-2); color:var(--color-white); opacity:0.75; }
+.nav-link.active { opacity:1; }
 
 /** menu **/
 .menu-open { max-height:100vh; overflow:hidden; }

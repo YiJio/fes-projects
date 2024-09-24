@@ -46,7 +46,7 @@ function contact(e) {
   const success = document.querySelector('.modal-overlay-success');
   loading.classList += ' modal-overlay-visible';
   emailjs
-    .sendForm('service_1el7y9l', 'template_tpxl4na', e.target, '1NwaApAvLC5dml1IX')
+    .sendForm('service_x2xaeo7', 'template_tpxl4na', e.target, '1NwaApAvLC5dml1IX')
     .then(() => {
       loading.classList.remove('modal-overlay-visible');
       success.classList += ' modal-overlay-visible';

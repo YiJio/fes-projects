@@ -17,8 +17,11 @@ async function fetchStationInfo() {
 	const line2 = `<div class="station-lines-code line-${dataInfo.LineCode2?.toLowerCase()}">${dataInfo.LineCode2}</div>`;
 	const line3 = `<div class="station-lines-code line-${dataInfo.LineCode3?.toLowerCase()}">${dataInfo.LineCode2}</div>`;
 	const line4 = `<div class="station-lines-code line-${dataInfo.LineCode4?.toLowerCase()}">${dataInfo.LineCode2}</div>`;
-	station.innerHTML = `<h1>${dataInfo.Code}${dataInfo.Name}</h1>
-		<h2>${dataInfo.Address.Street}, ${dataInfo.Address.City}, ${dataInfo.Address.State} ${dataInfo.Address.Zip}</h2>
+	station.innerHTML = `<div class="station-title">
+			<div class="station-code">${dataInfo.Code}</div>
+			<div class="station-name">${dataInfo.Name}</div>
+		</div>
+		<div class="station-address>${dataInfo.Address.Street}, ${dataInfo.Address.City}, ${dataInfo.Address.State} ${dataInfo.Address.Zip}</div>
 		<div class="station-lines">
 			${line1}
 			${dataInfo.LineCode2 !== null ? line2 : ''}
@@ -31,7 +34,6 @@ async function fetchStationInfo() {
 }
 
 function displayTimeTable(times) {
-	console.log(times)
 	for(let i = 0; i < DAYS.length - 1; i++) {
 		let first = ''; let = last = '';
 		let length = times[DAYS[i]].FirstTrains.length;
@@ -60,7 +62,8 @@ function displayTimeTable(times) {
 }
 
 button.addEventListener('click', function () {
-	window.location.href = `${window.location.origin}${window.location.pathname}`;
+	const path = window.location.pathname.split('/');
+	window.location.href = `${window.location.origin}/${path[1]}`;
 });
 
 fetchStationInfo();

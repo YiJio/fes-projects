@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+	<title>API Project | FES</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="head">
+			<header>
+			</header>
+		</div>
+		<div class="main">
+			<h1>Washington D.C. Metro</h1>
+			<!-- when it is React, will create my own dropdown button and have onclick events easier that way, for now use select -->
+			<div class="filter">
+				<select id="select-lines" name="lines">
+					<option value="" default disabled>Select line</option>
+				</select>
+			</div>
+			<div id="flow-chart" class="flow-chart">
+				<!-- when it is React, will create my own components that adhere to rows and columns for the flow chart, for now use typical cards -->
+				<!--<div class="flow-row">
+						<div class="flow-col">
+							<div class="flow-card"></div>
+						</div>
+						<div class="flow-col">
+							<div class="flow-card"></div>
+						</div>
+						<div class="flow-col">
+							<div class="flow-card"></div>
+						</div>
+					</div>-->
+			</div>
+		</div>
+		<div class="foot">
+			<footer></footer>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>

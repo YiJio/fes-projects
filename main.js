@@ -57,7 +57,7 @@ function displayStations(line, stations) {
 		}
 		card.addEventListener('click', () => {
 			localStorage.setItem('stationCode', station.Code);
-			window.location.href = `${window.location.origin}/station.html`;
+			window.location.href = `${window.location.origin}${window.location.pathname}station.html`;
 		});
 	});
 }

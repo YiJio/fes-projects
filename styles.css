@@ -65,7 +65,7 @@ select:focus { border-color:var(--color-primary-2); box-shadow:0 0 0 4px var(--c
 .station-lines { display:flex; align-items:center; justify-content:center; gap:4px; }
 .station-lines-code { display:inline-block; padding:2px 4px; border-radius:4px; color:var(--color-white); }
 
-.timetable { border:none; border-collapse:collapse; width:50%; }
+.timetable { border:none; border-collapse:collapse; min-width:50%; }
 .timetable th, .timetable td { vertical-align:top; padding:4px 8px; border-bottom:1px solid var(--color-black); border-right:1px solid var(--color-black); text-align:left; }
 .timetable-th { color:var(--color-white); }
 .timetable-th { border:1px solid var(--color-white) !important; background:var(--color-black); }

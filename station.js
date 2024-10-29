@@ -3,6 +3,8 @@ const apiKey2 = 'ea075668d040468596c850fe90dc6723'; // wmata api key 2
 const corsProxy = 'https://api.allorigins.win/get?url='; // fixing issue with cors
 const wmataUrl = 'https://api.wmata.com/Rail.svc/json/';
 
+const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
 const button = document.getElementById('back-btn');
 const station = document.getElementById('station');
 const timetable = document.getElementById('timetable');
@@ -11,23 +13,22 @@ const stationCode = localStorage.getItem('stationCode');
 async function fetchStationInfo() {
 	const response = await fetch(`${wmataUrl}jStationInfo?StationCode=${stationCode}&api_key=${apiKey}`);
 	const dataInfo = await response.json();
+	const line1 = `<div class="station-lines-code line-${dataInfo.LineCode1.toLowerCase()}">${dataInfo.LineCode1}</div>`;
 	const line2 = `<div class="station-lines-code line-${dataInfo.LineCode2?.toLowerCase()}">${dataInfo.LineCode2}</div>`;
 	const line3 = `<div class="station-lines-code line-${dataInfo.LineCode3?.toLowerCase()}">${dataInfo.LineCode2}</div>`;
 	const line4 = `<div class="station-lines-code line-${dataInfo.LineCode4?.toLowerCase()}">${dataInfo.LineCode2}</div>`;
 	station.innerHTML = `<h1>${dataInfo.Code}${dataInfo.Name}</h1>
-	<h2>${dataInfo.Address.Street}, ${dataInfo.Address.City}, ${dataInfo.Address.State} ${dataInfo.Address.Zip}</h2>
-	<div class="station-lines">
-	<div class="station-lines-code line-${dataInfo.LineCode1.toLowerCase()}">${dataInfo.LineCode1}</div>
-	${dataInfo.LineCode2 !== null ? line2 : ''}
-	${dataInfo.LineCode3 !== null ? line3 : ''}
-	${dataInfo.LineCode4 !== null ? line4 : ''}
-	</div>`;
+		<h2>${dataInfo.Address.Street}, ${dataInfo.Address.City}, ${dataInfo.Address.State} ${dataInfo.Address.Zip}</h2>
+		<div class="station-lines">
+			${line1}
+			${dataInfo.LineCode2 !== null ? line2 : ''}
+			${dataInfo.LineCode3 !== null ? line3 : ''}
+			${dataInfo.LineCode4 !== null ? line4 : ''}
+		</div>`;
 	const response2 = await fetch(`${wmataUrl}jStationTimes?StationCode=${stationCode}&api_key=${apiKey}`);
 	const dataTimes = await response2.json();
 	displayTimeTable(dataTimes.StationTimes[0]);
 }
-
-const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 function displayTimeTable(times) {
 	console.log(times)
@@ -59,7 +60,7 @@ function displayTimeTable(times) {
 }
 
 button.addEventListener('click', function () {
-	window.location.href = `${window.location.origin}`;
-})
+	window.location.href = `${window.location.origin}${window.location.pathname}`;
+});
 
 fetchStationInfo();

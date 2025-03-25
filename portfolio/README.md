@@ -1,3 +1,5 @@
 # Portfolio
-* A project done in Week 2 of the FES bootcamp.
-* Quick link: <a target="blank" href="https://yijio.github.io/fes-portfolio">Portfolio</a>.
+PREVIEW: [link](https://yijio.github.io/fes-projects/portfolio)
+
+## Overview
+A project done in Week 2 of the FES bootcamp.
